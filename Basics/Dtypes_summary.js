@@ -18,6 +18,7 @@ Functions
 
 */
 
+
 const score=100;
 const scored=1.08970;
 const isloggedin=false;
@@ -26,8 +27,31 @@ let u;
 
 const rollnuber=Symbol('22049')
 const rollnumber=Symbol('22049')
-console.log(rollnuber===rollnumber);
+//console.log(rollnuber===rollnumber);
 
 
 
+
+//datatypes are based on memory allocation
+//Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+//Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+//JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable when you declare it
+
+
+let myname="Pavan"
+let nn=myname
+nn="quote_laws"
+console.log(myname);
+console.log(nn);
+
+let user1={
+    email:"pavanshanmukhmadhav@gmail.com",
+    upi:"807123451@gbl"
+}
+let user2=user1;
+console.log(user1);
+user2.email="pavanshanxm@gmail.com"
+console.log(user2);
 
